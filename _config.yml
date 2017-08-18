@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            India Immersion Camp
+tagline:          'India Immersion Camp'
+description:      'from Sanskriti of NJ'
+url:              https:sanskriticamp.github.io
+baseurl:          /
+
+author:
+  name:           'Tejas Gupta'
+  url:            https://github.com/TGNYC
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+gems: [jekyll-paginate]
+
+github:
+  repo:           https://github.com/sanskriticamp/sanskriticamp.github.io/
