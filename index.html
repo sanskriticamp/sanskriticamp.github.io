@@ -1,37 +1,200 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#welcome">Welcome</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#logistics">When and Where</a></li>
+							<li><a href="#registration">Registration</a></li>
+							<li><a href="#volunteer">Volunteering</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+				<!-- Welcome -->
+					<section id="welcome" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>India Immersion Camp</h1>
+							<p><a href="http://www.sanskritiofnj.org">Hosted by Sankriti of NJ</a> from August 14 to 25</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+				<!-- About -->
+					<section id="about" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>About the Camp</h2>
+							<p>Sanskriti of NJ and Sanskriti School are pleased to announce their 8th Summer Camp. The 2 week camp dates are Aug 14th to 18th & Aug 21st to 25th, 2017. Like every year, we will be independently licensed.</p>
+							<p>Sanskriti Summer Camp will include activities such as yoga, dance, music, cooking, desi sports etc. There are daily workshops based on weekly themes. This year's weekly themes are to be determined but themes from previous years were Indian landscapes & wild life, Indian architecture & monuments, Famous Indian personalities, life in Indian cities verses villages, festivals and such. </p>
+							<p>In music, the camper's learn a fun Hindi song each week which is performed for parents on Friday evening. Similarly in dance, a Bollywood song dance is choreographed by a Sanskriti volunteer and performed by the kids on Friday. <b>Note: Music and Bollywood dance will be offered only if we get <a href=#volunteer> volunteers. </a></b></p>
+							<p> Additionally the campers enjoy S.T.E.M. activities, arts & crafts and Desi sports like kabbaddi, kho-kho, cricket, badminton etc.  We even had a professional table tennis player who represented India in common-wealth games stop by to impress the kids one year.  In cooking session, a vegetarian kid-friendly, nut free yet healthy item is cooked with the help of kids. This is a lot of fun for them. <b> Again, we need volunteers for sports & cooking session each day. </b> </p>
+							<p> We accept limited number of kids each year since we want to give individual attention to our campers. NOTE: This year, the campers will be divided in two age appropriate groups for most of the activities. <b>The camp is managed by a professional camp director with several years experience in managing such camps along with 3 assistants. In addition, a few teen volunteers as well as an adult Sanskriti volunteer is present most of the day. </b></p>
+						</div>
+					</section>
+
+
+				<!-- Logistics -->
+					<section id="logistics" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/clock.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Camp Hours</h2>
+									<p>Full Day Session: 9am - 4pm. Half Day: 9am-12noon OR 1-4pm</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/church.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Location</h2>
+									<p>Trinity Covenant Church of Livingston, 343 E Cedar St, Livingston, NJ 07039</p>
+									<ul class="actions">
+										<li><a href="https://www.google.com/maps/place/Trinity+Covenant+Church/@40.771862,-74.3026147,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3abe56350bd71:0xbf214c44035cfacf!8m2!3d40.771858!4d-74.300426" class="button">Get Directions</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/books.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Before and After Camp Care</h2>
+									<p>Early drop off (starting at 8:00 am) and late pick up (until 5 pm) available for an additional $50 per week per child. </p>
+									<ul class="actions">
+										<li><a href="#" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Registration -->
+					<section id="registration" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2> Registration </h2>
+								<ul class="actions">
+										<li><a href="http://www.sanskritiofnj.org/event-2432191/Registration" class="button special">Register Here</a></li>
+								</ul>
+								<h3> Eligability </h3>
+									<p> Children entering grades K-7 in Fall 2017 </p>
+								<h3> Pricing </h3>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Item</th>
+													<th>Date</th>
+													<th>Member Price</th>
+													<th>Non-member Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Full Day</td>
+													<td>by May 31</td>
+													<td>$250</td>
+													<td>$300</td>
+												</tr>
+												<tr>
+													<td>Full Day</td>
+													<td>by June 30</td>
+													<td>$300</td>
+													<td>$350</td>
+												</tr>
+												<tr>
+													<td>Full Day</td>
+													<td>after June 30</td>
+													<td>$350</td>
+													<td>$400</td>
+												</tr>
+												<tr>
+													<td>Half Day</td>
+													<td>by May 31</td>
+													<td>$150</td>
+													<td>$200</td>
+												</tr>
+												<tr>
+													<td>Half Day</td>
+													<td>by June 30</td>
+													<td>$200</td>
+													<td>$250</td>
+												</tr>
+												<tr>
+													<td>Half</td>
+													<td>after June 30</td>
+													<td>$250</td>
+													<td>$300</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p><b> 10% Sibling Discount </b></p>
+								<h3> Refund / Cancellation Policy </h3>
+									<p> 100% money back if canceled <b>before July 31</b>. 50% back until the start of camp. 25% back after camp starts.<br>Families can keep their child's spot for the following year as an alternative to cancellation. NOTE: Once registered, there will be no partial refund/credit issued if your child/children cannot attend the camp for all 5 days. Please refrain from requesting a partial refund. We appreciate your understanding. </p>
+								</section>
+							</div>
+						</div>
+					</section>
+			</div>
+
+			<!-- Volunteering -->
+			<section id="about" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2> Volunteering </h2>
+							<p> Similar to every year, we will accept a limited number of teen volunteers from community (rising high school freshmen, sophomores and juniors) at the India Immersion Camp. Camp dates this year are Aug 14-18 & Aug 21-25. <b>Teens will get volunteer hour certificate if requested.</b><br> Volunteers are asked to commit to at least one week but you can choose to come both weeks. Choose one or both shifts per day M-F between AM (9-12) & PM (1-4). <br>
+							It's fun for teens to mentor & guide the younger kids during activities. They are given specific tasks to complete and are exposed to a structured atmosphere. The teens learn to interact with adults and other teens without electronic devices.
+							</p>
+							<ul class="actions">
+										<li><a href="https://goo.gl/forms/T4t9uwrgqaaqY5Mg1" class="button special">Volunteering Form</a></li>
+							</ul>
+						</div>
+					</section>
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
