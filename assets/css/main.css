@@ -2542,10 +2542,6 @@
 			text-transform: none !important;
 		}
 
-		.icon > .label {
-			display: none;
-		}
-
 		.icon.major {
 			width: 2.5em;
 			height: 2.5em;
